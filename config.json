@@ -1,0 +1,39 @@
+{
+  "src": "public",
+  "dist": "build",
+  "vendors": ["distribution"],
+  "lintedExtensions": [".js", ".ts", ".jsx", ".tsx"],
+  "compileExtensions": [".js", ".ts", ".scss"],
+  "exclude": "/(node_modules|bower_components)/",
+  "browserSync": {
+    "host": "localhost",
+    "proxy": "example.com",
+    "port": 4200,
+    "ui": { "port": 4201 },
+    "open": false,
+    "socket": {
+      "domain": "localhost:4200"
+    },
+    "injectChanges": true,
+    "watchEvents": ["change"],
+    "files": [
+      "build/**/*.js",
+      "build/**/*.css"
+    ],
+    "ignore": [
+      "build/some-pattern"
+    ],
+    "watchOptions": {
+      "usePolling": true
+    }
+  },
+  "sass": {
+    "loadPaths": ["distribution/sass", "node_modules"]
+  },
+  "esbuild": {
+    "target": "es6"
+  },
+  "copy": {
+    "ignore": [".ts",".js",".scss",".gitkeep"]
+  }
+}

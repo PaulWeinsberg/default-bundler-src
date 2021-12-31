@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "@lorndev/agnostic-bundler": "^0.1.0",
+    "@lorndev/sass-assets": "^1.0.1",
+    "@lorndev/viewport": "^1.0.1"
+  },
+  "scripts": {
+    "build": "agnostic-bundler --lint --production",
+    "dev": "agnostic-bundler --lint --watch --sourcemap"
+  }
+}
