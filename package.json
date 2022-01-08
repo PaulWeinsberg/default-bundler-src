@@ -1,7 +1,7 @@
 {
   "dependencies": {
-    "@lorndev/agnostic-bundler": "^0.1.0",
-    "@lorndev/sass-assets": "^1.0.1",
+    "@lorndev/agnostic-bundler": "^0.1.6",
+    "@lorndev/sass-assets": "^2.0.0",
     "@lorndev/viewport": "^1.0.1"
   },
   "scripts": {
