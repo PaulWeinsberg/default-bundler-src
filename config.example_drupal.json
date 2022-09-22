@@ -1,0 +1,37 @@
+{
+  "src": "public",
+  "dist": "../web/themes/custom/my_theme",
+  "vendors": ["distribution"],
+  "lintedExtensions": [".js", ".ts", ".jsx", ".tsx"],
+  "compileExtensions": [".js", ".ts", ".scss"],
+  "exclude": "/(node_modules|bower_components)/",
+  "browserSync": {
+    "host": "localhost",
+    "proxy": "example.com",
+    "port": 4200,
+    "ui": { "port": 4201 },
+    "open": false,
+    "socket": {
+      "domain": "localhost:4200"
+    },
+    "injectChanges": true,
+    "watchEvents": ["change"],
+    "files": [
+      "../web/themes/custom/my_theme/**/*.js",
+      "../web/themes/custom/my_theme/**/*.css"
+    ],
+    "ignore": [],
+    "watchOptions": {
+      "usePolling": true
+    }
+  },
+  "sass": {
+    "loadPaths": ["distribution/sass", "node_modules"]
+  },
+  "esbuild": {
+    "target": "es6"
+  },
+  "copy": {
+    "ignore": [".ts",".js",".scss",".gitkeep"]
+  }
+}
