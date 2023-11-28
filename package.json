@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "@lorndev/agnostic-bundler": "^0.1.9",
+    "@lorndev/agnostic-bundler": "^0.2.0",
     "@lorndev/sass-assets": "^2.0.0",
     "@lorndev/viewport": "^1.0.1"
   },
